@@ -1,3 +1,0 @@
-## RPC
-- Remote Procedure call
-
