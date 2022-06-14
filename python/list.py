@@ -51,6 +51,9 @@ print(p) # 1
 p = list.pop(0)
 print(p) # 7
 
+# 요소 포함 여부
+print(2 in list) # True
+
 # 포함된 요소 개수
 c = list.count(2)
 print(c) # 1
