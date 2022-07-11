@@ -36,3 +36,30 @@ print(str) # abc
 
 # 문자열 길이
 print(len('abc')) # 3
+
+# 대문자 변환
+str = h
+print(str.upper()) # H
+
+# 소문자 변환
+str = H
+print(str.lower()) # h
+
+# 대문자 여부
+str = H
+print(str.isupper()) # True
+
+# 소문자 여부
+str = h
+print(str.islower()) # True
+
+# 문자열 연결
+arr = ['a', 'b', 'c']
+str = ''
+for a in arr:
+    str = str + a
+print(str) # abc
+
+# 문자열 연결 (join 함수 활용)
+arr = ['a', 'b', 'c']
+print(''.join(arr)) # abc
