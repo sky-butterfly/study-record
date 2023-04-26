@@ -61,3 +61,9 @@ print(c) # 1
 # 확장
 list.extend([8,9])
 print(list) # [6,5,2,8,9]
+
+# 특정요소 모두 제거
+list = [1,2,3,3,3,3,5,5,5]
+remove_set = {3,5}
+result = [i for i in a if i not in remove_set]
+print(result) #[1, 2]
