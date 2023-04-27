@@ -38,19 +38,19 @@ print(str) # abc
 print(len('abc')) # 3
 
 # 대문자 변환
-str = h
+str = 'h'
 print(str.upper()) # H
 
 # 소문자 변환
-str = H
+str = 'H'
 print(str.lower()) # h
 
 # 대문자 여부
-str = H
+str = 'H'
 print(str.isupper()) # True
 
 # 소문자 여부
-str = h
+str = 'h'
 print(str.islower()) # True
 
 # 문자열 연결
@@ -63,3 +63,19 @@ print(str) # abc
 # 문자열 연결 (join 함수 활용)
 arr = ['a', 'b', 'c']
 print(''.join(arr)) # abc
+
+# 인덱스로 문자열 추출
+str = 'Hello World!';
+print(str[2]) # l
+print(str[1:2]) # e
+print(str[:]) # Hello World!
+print(str[1:]) # ello World!
+print(str[-2:]) # d!
+
+# 문자열 길이
+str = '12345'
+print(len(str))
+
+# 정수로 변환
+str = 100
+print(int(str))
