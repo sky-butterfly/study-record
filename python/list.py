@@ -27,13 +27,21 @@ print(a) # None
 print(list) # [1,2,4,5,6]
 
 # 정렬
+list = [2, 1, 3]
 list.sort()
+print(list) # [1, 2, 3]
+
+# list 존체는 변형하지 않고 정렬값 반환
+list = [2, 1, 3]
+print(sorted(list)) # [1, 2, 3]
+print(list) # [2, 1, 3]
 
 # 뒤집기
 list.reverse()
 print(list) # [6,5,4,2,1]
 
 # 위치반환 (요소 입력)
+list = [6, 2, 1]
 i = list.index(6)
 print(i) # 0
 
@@ -42,6 +50,7 @@ list.insert(0, 7)
 print(list) # [7,6,5,4,2,1]
 
 # 요소 제거 (요소입력)
+list = [7,6,5,2,1,4]
 list.remove(4)
 print(list) # [7,6,5,2,1]
 
@@ -65,5 +74,9 @@ print(list) # [6,5,2,8,9]
 # 특정요소 모두 제거
 list = [1,2,3,3,3,3,5,5,5]
 remove_set = {3,5}
-result = [i for i in a if i not in remove_set]
+result = [i for i in list if i not in remove_set]
 print(result) #[1, 2]
+
+# 문자열로 변환
+list = ['1', '2', '3']
+print(''.join(list))
