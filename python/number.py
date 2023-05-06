@@ -14,3 +14,7 @@ print(int(4 ** 0.5)) # 2
 # 정수 판별
 n = 5
 print(n % 1 == 0) # True
+
+# 숫자인지 판별
+n = 1
+print(n.isdigit()) # True

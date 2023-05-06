@@ -55,6 +55,7 @@ list.remove(4)
 print(list) # [7,6,5,2,1]
 
 # 요소 끄집어내기 (인덱스입력)
+list = [7,1]
 p = list.pop()
 print(p) # 1
 p = list.pop(0)

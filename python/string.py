@@ -79,3 +79,22 @@ print(len(str))
 # 정수로 변환
 str = 100
 print(int(str))
+
+# 값이 같은지 확인
+a,b = 'a', 'b'
+print(a) # a
+print(b) # b
+print(a != b) # True
+print(a == b) # False
+
+# 접두사인지 확인
+str = 'Hello World'
+print(str.startswith('Hello')) # True
+
+# 접미사인지 확인
+str = 'Helloaaa'
+print(str.endswith('aaa')) # True 
+
+# 문자열 판별
+str = '123'
+print(str.isalpha()) # True
