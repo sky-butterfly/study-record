@@ -1,3 +1,6 @@
+import math
+import fractions
+
 # 숫자를 문자형으로 변환
 n = 100
 print(str(n))
@@ -16,5 +19,54 @@ n = 5
 print(n % 1 == 0) # True
 
 # 숫자인지 판별
-n = 1
+n = "1"
 print(n.isdigit()) # True
+
+# 이진수 변환 ( 10진수 -> 2진수 )
+n = 55
+print(bin(n)) # 0b110111
+
+# 이진수 변환 ( 2진수 문자열 -> 10진수 )
+s = '10'
+print(int(s, 2)) # 2
+
+# 이진수 변환 ( 10진수 -> 2진수 접두어 제외)
+n = 55
+print(format(n, 'b')) # 110111
+
+# 2의 거듭제곱인지 확인
+# 2의 거듭제곱인 n을 비트로 나타낼 때, 가장 왼쪽만 1이며, n-1 은 가장 왼쪽은 0, 나머지는 모두 1이 된다. 따라서 n 과 n-1 을 &(and) 연산하면 결과는 0이 나온다.
+n = 8
+print(n&(n-1) == 0) # True
+
+# 소수 반올림
+n = 2/3
+print(round(n, 2)) # 0.67
+
+# 정수 반올림
+n = 66
+print(round(n, -1)) # 70
+
+# 소수 올림
+# import math
+n = 10.5
+print(math.ceil(n)) # 11
+
+# 소수 내림
+n = 10.5
+print(math.floor(n)) # 10
+
+# 소수점 버림
+n = 11.5
+print(math.trunc(n)) # 11
+
+# 기약분수
+# import fractions
+a, b = 2, 4
+x = fractions.Fraction(a, b)
+print(x) # 1/2
+
+# 기약분수 분자
+print(x.numerator) # 1
+# 기약분수 분모
+print(x.denominator) # 2

@@ -31,6 +31,11 @@ list = [2, 1, 3]
 list.sort()
 print(list) # [1, 2, 3]
 
+# 내림차순 정렬
+list = [1, 2, 3]
+list.sort(reverse=True)
+print(list) # [3, 2, 1]
+
 # list 존체는 변형하지 않고 정렬값 반환
 list = [2, 1, 3]
 print(sorted(list)) # [1, 2, 3]
