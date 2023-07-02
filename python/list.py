@@ -50,6 +50,9 @@ list = [6, 2, 1]
 i = list.index(6)
 print(i) # 0
 
+list = [1, 1, 1]
+print('index : ', list.index(1)) # 0
+
 # 요소 삽입 (인덱스, 요소)
 list.insert(0, 7)
 print(list) # [7,6,5,4,2,1]
@@ -86,3 +89,23 @@ print(result) #[1, 2]
 # 문자열로 변환
 list = ['1', '2', '3']
 print(''.join(list))
+
+# unshift
+list = [1, 2, 3]
+list.insert(0, 0)
+print(list) # 0, 1, 2, 3
+
+# shift
+list = [1, 2, 3]
+list.pop(0)
+print(list) # 2, 3
+
+# push
+list = [1, 2]
+list.append(3)
+print(list) # 1, 2, 3
+
+# pop
+list = [1, 2, 3]
+list.pop()
+print(list) # 1, 2

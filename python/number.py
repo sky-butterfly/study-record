@@ -1,4 +1,3 @@
-import math
 import fractions
 
 # 숫자를 문자형으로 변환
@@ -39,27 +38,6 @@ print(format(n, 'b')) # 110111
 n = 8
 print(n&(n-1) == 0) # True
 
-# 소수 반올림
-n = 2/3
-print(round(n, 2)) # 0.67
-
-# 정수 반올림
-n = 66
-print(round(n, -1)) # 70
-
-# 소수 올림
-# import math
-n = 10.5
-print(math.ceil(n)) # 11
-
-# 소수 내림
-n = 10.5
-print(math.floor(n)) # 10
-
-# 소수점 버림
-n = 11.5
-print(math.trunc(n)) # 11
-
 # 기약분수
 # import fractions
 a, b = 2, 4
@@ -70,3 +48,8 @@ print(x) # 1/2
 print(x.numerator) # 1
 # 기약분수 분모
 print(x.denominator) # 2
+
+# 2진수, 8진수, 16진수
+print(bin(4))
+print(oct(4))
+print(hex(4))
