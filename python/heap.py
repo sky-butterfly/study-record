@@ -3,7 +3,7 @@ import heapq
 h = []
 
 # 삽입
-for i in range(5):
+for i in range(5, 0, -1):\
     heapq.heappush(h, i)
 
 print(h)
