@@ -109,3 +109,7 @@ print(list) # 1, 2, 3
 list = [1, 2, 3]
 list.pop()
 print(list) # 1, 2
+
+# sort 조건
+list = [[1, 2], [3, 4], [5, 6]]
+print(sorted(list, key=lambda x : x[0]))
