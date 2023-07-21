@@ -1,7 +1,7 @@
 from bisect import bisect_left, bisect_right
 
-l = [1, 2, 3, 4, 5]
-x = 3
+l = [1, 2, 3, 3, 3, 5]
+x = 4
 
 print(bisect_left(l, x))
 print(bisect_right(l, x))
